@@ -1,0 +1,64 @@
+.header-with-content {
+    background-image: url("/img/bgk-header.png");
+    height: 669px;
+}
+
+.header-with-content__wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-with-content__logo {
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+  font-size: 30px;
+  color: #23c3cf;
+}
+
+.header-with-content__logo img {
+  margin-right: 10px;
+}
+
+.header-with-content__navigation {
+    display: flex;
+}
+
+.header-with-content__navigation > a {
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 13px;
+}
+
+.header-with-content__mobile-navigation {
+    display: none;
+}
+
+.header-with-content__mobile-navigation a {
+    color: white;
+}
+
+@media (max-width: 1120px) {
+    .header-with-content__navigation > a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .header-with-content__navigation {
+        display: none;
+    }
+
+    .header-with-content__mobile-navigation {
+        display: block;
+        font-size: 20px;
+    }
+}
