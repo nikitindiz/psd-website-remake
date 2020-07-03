@@ -1,38 +1,451 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  /*width: 1600px;*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.7em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+.red-rectangle {
+  background-color: red;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.first-section {
+  background-image: url("/img/bgk-header.png");
+  height: 669px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mockup-png {
+  z-index: 2;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 1600px;
+  height: 4170px;
+  background-image: url("/designs/design.png");
+  opacity: 0.3;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .logo,
+.header .logo {
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+  font-size: 30px;
+  color: #23c3cf;
+}
+
+.footer .logo img,
+.header .logo img {
+  margin-right: 10px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation > a {
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 13px;
+}
+
+
+.first-section__banner {
+  padding-top: 116px;
+  color: white;
+  text-align: center;
+}
+
+.first-section__banner h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+hr {
+  width: 51px;
+  border: 1px solid #23c3cf;
+  margin-bottom: 24px;
+}
+
+.first-section__banner > p {
+  width: 780px;
+  margin: 0 auto 57px;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #23c3cf;
+  color: #23c3cf;
+  font-size: 16px;
+}
+
+.second-section .wrapper {
+  display: flex;
+  padding: 15px 10px 30px;
+}
+
+.second-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.second-section .big-logo-container {
+  width: 42%;
+  display: flex;
+  justify-content: center;
+}
+
+.second-section .big-logo-container img {
+  align-self: center;
+}
+
+.second-section .content {
+  width: 58%;
+  padding: 50px 0;
+}
+
+.third-section {
+  background-image: url('/img/bgk-middle.png');
+}
+
+.third-section .wrapper {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  display: flex;
+}
+
+.third-section img {
+  margin-bottom: 24px;
+}
+
+.third-section a {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+}
+
+.fifth-section  .wrapper,
+.fourth-section .wrapper {
+  padding-top: 66px;
+  padding-bottom: 51px;
+}
+
+.fifth-section  h2,
+.fourth-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.fifth-section  p,
+.fourth-section p {
+  margin: 0 0 15px;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.fourth-section .items-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fourth-section .items-grid h3 {
+  font-size: 14px;
+}
+
+.fourth-section .items-grid .item {
+  width: 33%;
+  flex-grow: 1;
+  height: 270px;
+  text-align: center;
+  padding: 59px 24px 24px;
+}
+
+.fifth-section {
+  background-image: url("/img/bgk-header.png");
+  color: white;
+}
+
+.fifth-section .cards-row {
+  display: flex;
+  margin-bottom: 65px;
+}
+
+.fifth-section .image-placeholder {
+  background-color: white;
+  height: 229px;
+}
+
+.fifth-section .image-footer {
+  text-align: center;
+  padding: 16px 5px;
+}
+
+.fifth-section .image-footer p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.fifth-section .card p,
+.fifth-section .card h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.fifth-section .card:last-child {
+  margin-right: 0;
+}
+
+.fifth-section .card:first-child {
+  margin-left: 0;
+}
+
+.fifth-section hr {
+  margin-bottom: 45px;
+}
+
+.fifth-section p {
+  text-align: center;
+}
+
+.fifth-section .card {
+  width: 25%;
+  border: 1px solid white;
+  margin: 0 10px;
+}
+
+.sixth-section {
+  padding-bottom: 27px;
+}
+
+.sixth-section .wrapper {
+  display: flex;
+  padding-top: 104px;
+  justify-content: space-between;
+}
+
+.sixth-section .wrapper > * {
+  margin: 0 5px;
+}
+
+.sixth-section .wrapper > form {
+  width: 50%;
+}
+
+.sixth-section .wrapper > *:first-child {
+  margin-left: 0;
+}
+
+.sixth-section .wrapper > *:last-child {
+  margin-right: 0;
+}
+
+textarea, input {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  padding: 11px;
+  margin-bottom: 25px;
+}
+
+.sixth-section form .button {
+  width: initial;
+}
+
+.sixth-section h3,
+.sixth-section p {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sixth-section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 33px;
+}
+
+.sixth-section .client-logos {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.sixth-section .client-logos h3 {
+  width: 100%;
+}
+
+.sixth-section .client-logo {
+  height: 90px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sixth-section .client-logo > img {
+  max-width: 100%;
+}
+
+.footer {
+  color: white;
+  background-image: url("/img/bgk-footer.png");
+}
+
+.footer p,
+.footer h5 {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+
+.footer h5 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 29px;
+}
+
+.footer .wrapper {
+  display: flex;
+  padding-top: 70px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .wrapper > * {
+  padding: 0 5px;
+  width: 33%;
+}
+
+.footer .wrapper > *:first-child {
+  padding-left: 0;
+}
+
+.footer .wrapper > *:nth-child(3) {
+  padding-right: 0;
+}
+
+.footer .logo {
+  padding-bottom: 22px;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer .bottom-links {
+  width: 32%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .copyright {
+  width: 50%;
+}
+
+.footer .footer-links {
+  padding: 43px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .copyright {
+  text-align: right;
+}
+
+.footer .column.with-header {
+  padding-top: 15px;
+}
+
+.footer p.with-icon {
+  position: relative;
+  margin-left: 31px;
+  margin-bottom: 20px;
+}
+
+.footer p.with-icon:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: -34px;
+}
+
+.footer p.with-icon.icon-marker:before {
+  background-image: url('/img/png/big104.png');
+}
+
+.footer p.with-icon.icon-phone:before {
+  background-image: url('/img/png/phone351.png');
+}
+
+.footer .subscribe-field {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.footer .subscribe-field input {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.footer .subscribe-field button {
+  height: 43px;
+  width: 91px;
+  margin-left: 12px;
+  border: 1px solid white;
+}
+
+.footer .social-networks-links a {
+  margin-right: 10px;
 }
