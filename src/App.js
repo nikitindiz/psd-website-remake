@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 
 import LandingPage from './pages/LandingPage';
 
-
 const App = () => {
   return (
     <div className="App">
@@ -16,7 +15,7 @@ const App = () => {
           <HeaderBanner />
         </HeaderWithContent>
 
-        {/* <LandingPage /> */}
+        <LandingPage />
 
         <Footer />
       </div>

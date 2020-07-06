@@ -97,6 +97,12 @@
     justify-content: space-between;
 }
 
+@media (max-width: 840px) {
+    .footer__bottom-links {
+        margin-bottom: 10px;
+    }
+}
+
 .footer__copyright {
     width: 50%;
     text-align: right;

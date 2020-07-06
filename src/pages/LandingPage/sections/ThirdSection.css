@@ -1,0 +1,26 @@
+.third-section {
+    background-image: url("/img/bgk-middle.png");
+    background-size: cover;
+}
+
+.third-section__wrapper {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 10px;
+}
+
+.third-section img {
+    margin-bottom: 24px;
+}
+
+.third-section a {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+}
