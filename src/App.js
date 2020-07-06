@@ -18,7 +18,7 @@ const App = () => {
 
         {/* <LandingPage /> */}
 
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );

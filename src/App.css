@@ -45,29 +45,9 @@ body > * {
 }
 
 
-.footer .logo {
-  display: flex;
-  align-items: center;
-  font-weight: 100;
-  font-size: 30px;
-  color: #23c3cf;
-}
-
-.footer .logo img {
-  margin-right: 10px;
-}
 
 
 
-.first-section__banner {
-  padding-top: 116px;
-  color: white;
-  text-align: center;
-}
-
-.first-section__banner h1 {
-  font-family: 'Playfair Display', serif;
-}
 
 hr {
   width: 51px;
@@ -75,10 +55,6 @@ hr {
   margin-bottom: 24px;
 }
 
-.first-section__banner > p {
-  width: 780px;
-  margin: 0 auto 57px;
-}
 
 .button {
   text-decoration: none;
@@ -307,122 +283,3 @@ textarea, input {
   max-width: 100%;
 }
 
-.footer {
-  color: white;
-  background-image: url("/img/bgk-footer.png");
-}
-
-.footer p,
-.footer h5 {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: 14px;
-}
-
-.footer h5 {
-  font-size: 15px;
-  font-weight: 700;
-  margin-bottom: 29px;
-}
-
-.footer .wrapper {
-  display: flex;
-  padding-top: 70px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.footer .wrapper > * {
-  padding: 0 5px;
-  width: 33%;
-}
-
-.footer .wrapper > *:first-child {
-  padding-left: 0;
-}
-
-.footer .wrapper > *:nth-child(3) {
-  padding-right: 0;
-}
-
-.footer .logo {
-  padding-bottom: 22px;
-}
-
-.footer a {
-  color: white;
-}
-
-.footer .bottom-links {
-  width: 32%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer .copyright {
-  width: 50%;
-}
-
-.footer .footer-links {
-  padding: 43px 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer .copyright {
-  text-align: right;
-}
-
-.footer .column.with-header {
-  padding-top: 15px;
-}
-
-.footer p.with-icon {
-  position: relative;
-  margin-left: 31px;
-  margin-bottom: 20px;
-}
-
-.footer p.with-icon:before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  left: -34px;
-}
-
-.footer p.with-icon.icon-marker:before {
-  background-image: url('/img/png/big104.png');
-}
-
-.footer p.with-icon.icon-phone:before {
-  background-image: url('/img/png/phone351.png');
-}
-
-.footer .subscribe-field {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.footer .subscribe-field input {
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-}
-
-.footer .subscribe-field button {
-  height: 43px;
-  width: 91px;
-  margin-left: 12px;
-  border: 1px solid white;
-}
-
-.footer .social-networks-links a {
-  margin-right: 10px;
-}

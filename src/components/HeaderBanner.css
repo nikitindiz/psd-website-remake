@@ -1,0 +1,27 @@
+.first-section__banner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 10px;
+
+    color: white;
+    text-align: center;
+}
+
+.first-section__banner h1 {
+    font-family: "Playfair Display", serif;
+}
+
+
+.first-section__banner > p {
+    max-width: 780px;
+    /* margin: 0 auto 57px; */
+  }
+
+.first-section__banner-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #23c3cf;
+    color: #23c3cf;
+    font-size: 16px;
+}

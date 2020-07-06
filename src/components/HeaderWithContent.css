@@ -1,14 +1,17 @@
 .header-with-content {
     background-image: url("/img/bgk-header.png");
     height: 669px;
+    background-size: cover;
 }
 
-.header-with-content__wrapper {
+.header-with-content__container {
     max-width: 960px;
     margin: 0 auto;
     padding: 15px 10px;
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-with-content__logo {
@@ -40,11 +43,15 @@
 
 .header-with-content__mobile-navigation {
     display: none;
+
+    font-size: 20px;
+    position: relative;
 }
 
 .header-with-content__mobile-navigation a {
     color: white;
 }
+
 
 @media (max-width: 1120px) {
     .header-with-content__navigation > a {
@@ -59,6 +66,40 @@
 
     .header-with-content__mobile-navigation {
         display: block;
-        font-size: 20px;
     }
+}
+
+.header-with-content__mobile-navigation-button {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.header-with-content__mobile-navigation-dropdown {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* display: none; */
+    transition: 1s all;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.header-with-content__mobile-navigation-dropdown_open {
+    /* display: block; */
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+}
+
+.header-with-content__mobile-navigation-dropdown a {
+    display: block;
+    padding: 10px;
+}
+
+.header-with-content__children {
+    height: 589px;
+    display: flex;
+    align-items: center;
 }

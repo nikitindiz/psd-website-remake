@@ -1,10 +1,12 @@
 import React from 'react';
 
+import './HeaderBanner.css';
+
 const HeaderBanner = (props) => (
-    <div className="first-section__banner wrapper">
+    <div className="first-section__banner">
         <h1>
             We Are Awesome Creative Agency
-      </h1>
+        </h1>
         <hr />
         <p>
             This is Photoshop's version  of Lorem Ipsum.
@@ -13,9 +15,9 @@ const HeaderBanner = (props) => (
             nisi elit consequat ipsum, nec sagittis sem nibh id elit.
             Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
             </p>
-        <a href="#" className="button">
+        <a href="#" className="first-section__banner-button">
             LEARN MORE
-      </a>
+        </a>
     </div>
 );
 
