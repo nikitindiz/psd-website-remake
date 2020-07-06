@@ -16,7 +16,7 @@ const LandingPage = () => (
         <ThirdSection />
         <FourthSection />
         <FifthSection />
-        {/* <SixthSection /> */}
+        <SixthSection />
     </>
 );
 
